@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Estilos-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <link rel="stylesheet" href="../static/css/main.css">
+        <!--Font awesome-->
+        <script src="https://kit.fontawesome.com/ac5f1e6c4f.js" crossorigin="anonymous"></script>
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!--Title y keywords-->
+        <title>Las Aucas</title>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+<body>
+    
+
+    <header>
+      
+
+        <section class="form-register">
+
+            <h5 class="text-center">Información de Contacto</h5>
+            <h6 class="text-center">Nos pondremos en contacto a la brevedad.</h6>
+                            </div>
+                            <div class="card-body" >
+                                <form action="/products" method="POST">
+                                                           
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control mb-3" name="name" placeholder="Tu Nombre">
+                                    <label>Apellido</label>
+                                    <input type="text" class="form-control mb-3" name="lastName" placeholder="Tu Apellido">
+                                    <label>DNI</label>
+                                    <input type="text" class="form-control mb-3" name="dni" placeholder="Tu Dni">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control mb-3" name="email" placeholder="Tu email">
+                                    <label>Pais</label>
+                                    <input type="text" class="form-control mb-3" name="pais" placeholder="Tu Pais">
+                                    <label>Mensaje</label>
+                                    <input type="text" class="form-control mb-3" name ="message" placeholder="Tu Mensaje">
+
+                                    <div class="g-recaptcha" data-sitekey="6LexwAYpAAAAAOQTEiEgnSDgxO5jU6co9dsJrTz2"></div>
+                                    <br/>
+                                                              
+                                    <button class="boton btn-1 btn-lg"  type="submit" onclick="alert('GRACIAS POR TU CONSULTA! PRONTO TE CONTACTAREMOS!!!');" style="background-color: rgb(194, 156, 3);">
+                                        <a href="/index.html" style="color: black;">Guardar</a>
+                                    </button>
+                                    <button class="boton btn-1 btn-lg" style="background-color: rgb(194, 156, 3);">
+                                        <a href="/index.html" style="color: black;">Inicio</a>
+                                    </button>
+                                </form>
+                            </div>
+        </section>
+
+    
+                       
+                        
+                            
+                           
+                
+                   
+            
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
